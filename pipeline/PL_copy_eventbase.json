@@ -65,6 +65,22 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Wait for 10sec",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Copy data_new_file",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 10
+				}
 			}
 		],
 		"parameters": {
