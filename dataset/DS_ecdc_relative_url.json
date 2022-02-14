@@ -1,0 +1,30 @@
+{
+	"name": "DS_ecdc_relative_url",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_worldbank_prodserver",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "file_name",
+				"type": "varchar"
+			},
+			{
+				"name": "base_url",
+				"type": "varchar"
+			},
+			{
+				"name": "relative_url",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ecdc_data_master_table"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

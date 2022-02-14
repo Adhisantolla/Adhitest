@@ -1,0 +1,9 @@
+{
+	"name": "worldbankprod",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2c050f70-1884-417d-8d4d-0f7f102176b0",
+		"tenantId": "cf9d6ae4-4d1b-4428-acd6-eec2c8db2bfa"
+	}
+}

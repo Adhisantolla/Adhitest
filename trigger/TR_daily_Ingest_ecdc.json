@@ -1,0 +1,24 @@
+{
+	"name": "TR_daily_Ingest_ecdc",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_ECDC_Data_daily Ingest",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2022-01-26T12:54:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}

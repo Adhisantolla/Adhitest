@@ -1,0 +1,27 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_copy_eventbase",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"filename": "@triggerbody().filename"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/test/blobs/eventbase",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/4213c321-262b-441d-a4f1-a4c221ea0385/resourceGroups/project_practice/providers/Microsoft.Storage/storageAccounts/worldbankraw",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
